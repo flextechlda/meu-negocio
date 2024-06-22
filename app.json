@@ -1,0 +1,53 @@
+{
+    "expo": {
+        "name": "meu-negocio",
+        "slug": "meu-negocio",
+        "version": "1.0.7",
+        "orientation": "portrait",
+        "icon": "./assets/images/icon.png",
+        "scheme": "myapp",
+        "userInterfaceStyle": "automatic",
+        "splash": {
+            "image": "./assets/images/splash.png",
+            "resizeMode": "contain",
+            "backgroundColor": "#008685"
+        },
+        "assetBundlePatterns": ["**/*"],
+        "ios": {
+            "supportsTablet": true
+        },
+        "android": {
+            "adaptiveIcon": {
+                "foregroundImage": "./assets/images/adaptive-icon.png",
+                "backgroundColor": "#008685"
+            },
+            "package": "com.flextech.meunegocio",
+            "versionCode": 3
+        },
+        "web": {
+            "bundler": "metro",
+            "output": "static",
+            "favicon": "./assets/images/favicon.png"
+        },
+        "plugins": [
+            "expo-router",
+            [
+                "expo-camera",
+                {
+                    "cameraPermission": "Permitir que o aplicativo Meu Negocio acesse a sua camera",
+                    "microphonePermission": "Permitir que o aplicativo Meu Negocio acesse o seu microphone",
+                    "recordAudioAndroid": true
+                }
+            ]
+        ],
+        "experiments": {
+            "typedRoutes": true,
+            "tsconfigPaths": true
+        },
+        "extra": {
+            "eas": {
+                "projectId": "f4cd31cb-7465-4f2e-b0c4-55c806bf677a"
+            }
+        }
+    }
+}
